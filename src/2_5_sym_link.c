@@ -1,6 +1,3 @@
-#define _XOPEN_SOURCE
-#define _XOPEN_SOURCE_EXTENDED
-
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
