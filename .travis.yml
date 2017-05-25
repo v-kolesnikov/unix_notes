@@ -1,0 +1,12 @@
+language: c
+
+dist: trusty
+
+compiler:
+  - clang
+  - gcc
+
+script:
+  - cmake .
+  - make
+  - make test
