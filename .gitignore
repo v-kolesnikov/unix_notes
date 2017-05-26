@@ -1,2 +1,17 @@
+/bin/*
+!/bin/.gitkeep
+
 /build/*
 !/build/.gitkeep
+
+/lib/*
+!/lib/.gitkeep
+
+/Testing
+
+CMakeFiles
+CMakeCache.txt
+CTestTestfile.cmake
+cmake_install.cmake
+
+Makefile
