@@ -7,6 +7,8 @@
 /lib/*
 !/lib/.gitkeep
 
+/spec/examples.txt
+
 /Testing
 
 CMakeFiles

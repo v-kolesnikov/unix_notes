@@ -6,7 +6,10 @@ compiler:
   - clang
   - gcc
 
+before_install: bundle
+
 script:
   - cmake .
   - make
   - make test
+  - bundle exec rspec spec/
