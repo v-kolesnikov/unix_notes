@@ -5,9 +5,9 @@ RSpec.describe '2_5_sym_link' do
     end
 
     context 'without arguments' do
-      it { expect(stdout).to be_empty }
-      it { expect(stderr).to be_empty }
-      it { expect(status.exitstatus).to eq 255 }
+      it_behaves_like 'exec silently' do
+        let(:exitstatus) { 255 }
+      end
     end
 
     context 'with symlink path as argument' do
