@@ -1,4 +1,5 @@
 require 'byebug'
+require 'fileutils'
 
 SPEC_ROOT = Pathname(__FILE__).dirname
 BIN_ROOT  = Pathname(__FILE__).dirname.join('..', 'bin')
