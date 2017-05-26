@@ -1,6 +1,3 @@
-require 'spec_helper'
-require 'shared/exec'
-
 RSpec.describe '2_5_sym_link' do
   describe 'exec' do
     include_context 'exec' do

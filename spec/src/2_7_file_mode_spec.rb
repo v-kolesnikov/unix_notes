@@ -1,7 +1,3 @@
-require 'spec_helper'
-require 'shared/exec'
-require 'etc'
-
 RSpec.describe '2_7_file_mode' do
   describe 'exec' do
     include_context 'exec' do

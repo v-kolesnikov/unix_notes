@@ -1,8 +1,13 @@
 require 'byebug'
+
+require 'etc'
 require 'fileutils'
 
 SPEC_ROOT = Pathname(__FILE__).dirname
 BIN_ROOT  = Pathname(__FILE__).dirname.join('..', 'bin')
+
+Dir[SPEC_ROOT.join('shared/**/*.rb')].each { |f| require f }
+Dir[SPEC_ROOT.join('support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
   config.disable_monkey_patching!

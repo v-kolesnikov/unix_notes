@@ -1,6 +1,3 @@
-require 'spec_helper'
-require 'shared/exec'
-
 RSpec.describe '2_6_cp' do
   describe 'exec' do
     include_context 'exec' do
