@@ -1,6 +1,6 @@
 require 'open3'
 
-RSpec.shared_context 'exec' do
+RSpec.shared_context 'exec' do |bin|
   let(:args) { [] }
 
   let(:exec) do

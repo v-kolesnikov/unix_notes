@@ -1,8 +1,6 @@
 RSpec.describe '2_5_sym_link' do
   describe 'exec' do
-    include_context 'exec' do
-      let(:bin) { '2_5_sym_link' }
-    end
+    include_context 'exec', '2_5_sym_link'
 
     context 'without arguments' do
       it_behaves_like 'exec silently' do

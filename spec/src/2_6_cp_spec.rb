@@ -1,8 +1,6 @@
 RSpec.describe '2_6_cp' do
   describe 'exec' do
-    include_context 'exec' do
-      let(:bin) { '2_6_cp' }
-    end
+    include_context 'exec', '2_6_cp'
 
     context 'without arguments' do
       it_behaves_like 'exec silently' do

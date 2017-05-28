@@ -1,9 +1,8 @@
 RSpec.describe '2_7_file_mode' do
   describe 'exec' do
-    include_context 'exec' do
-      let(:bin) { '2_7_file_mode' }
-      after { FileUtils.rm('my_file') }
-    end
+    include_context 'exec', '2_7_file_mode'
+
+    after { FileUtils.rm('my_file') }
 
     let(:login) { Etc.getlogin }
     let(:group) { Etc.getgrgid.name }
