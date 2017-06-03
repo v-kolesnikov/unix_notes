@@ -6,10 +6,10 @@ RSpec.describe '2_12_signal' do
 
     before do
       spawn
-      sleep(0.1)
+      sleep(0.01)
       signals.each do |signal|
         Process.kill(signal, pid)
-        sleep(0.1)
+        sleep(0.01)
       end
     end
 
