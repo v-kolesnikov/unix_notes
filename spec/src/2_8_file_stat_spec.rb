@@ -16,9 +16,9 @@ RSpec.describe '2_8_file_stat' do
         GID = #{stat.gid}
         rdev = (#{stat.rdev_major}, #{stat.rdev_minor})
         size = #{stat.size}
-        atime = #{stat.atime.strftime('%a %b %d %T %Y')}
-        mtime = #{stat.mtime.strftime('%a %b %d %T %Y')}
-        ctime = #{stat.ctime.strftime('%a %b %d %T %Y')}
+        atime = #{stat.atime.strftime('%a %b %e %T %Y')}
+        mtime = #{stat.mtime.strftime('%a %b %e %T %Y')}
+        ctime = #{stat.ctime.strftime('%a %b %e %T %Y')}
       EOF
     end
 
