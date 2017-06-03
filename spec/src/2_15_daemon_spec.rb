@@ -25,5 +25,9 @@ RSpec.describe '2_15_daemon' do
     it 'create a new process' do
       expect { Process.kill(0, fork_pid) }.not_to raise_exception
     end
+
+    it_behaves_like 'daemon' do
+      subject(:pid) { fork_pid }
+    end
   end
 end
