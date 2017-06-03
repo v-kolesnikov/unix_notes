@@ -4,14 +4,11 @@ RSpec.describe '2_7_file_mode' do
 
     after { FileUtils.rm('my_file') }
 
-    let(:login) { Etc.getlogin }
-    let(:group) { Etc.getgrgid.name }
-
     it { expect(stdout).to match(<<~EOF) }
-      -rwx------ *1 #{login} *#{group} *0 .* my_file
-      -rws------ *1 #{login} *#{group} *0 .* my_file
-      -rwx-----t *1 #{login} *#{group} *0 .* my_file
-      -rwx--s--- *1 #{login} *#{group} *0 .* my_file
+      -rwx------ .* my_file
+      -rws------ .* my_file
+      -rwx-----t .* my_file
+      -rwx--s--- .* my_file
     EOF
 
     it { expect(stderr).to be_empty }
